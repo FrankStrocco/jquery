@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- <link rel="stylesheet" href="#"> -->
+        <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+        <script >
+            $(document).ready(function () {
+                // $('article').wrap('<section class="highlight"></section>');
+                $('article').wrapAll('<section class="highlight"></section>');
+
+                $('article h2').wrapInner('<em></em>');
+            });
+        </script>
+        <style>
+            .display {
+                color: goldenrod;
+            }
+            .highlight {
+                background-color: lemonchiffon;
+            }
+        </style>
+        <title>jQuery Commands</title>
+    </head>
+    <body>
+        <!-- section>h1{welcome}+article#a$*3>h2{Subhead $}+p>lorem -->
+        <section>
+            <h1>welcome</h1>
+            <article id="a1" class="highlight">
+                <h2>Subhead 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nihil tempora assumenda voluptatum nam maiores accusantium. Debitis quam facilis voluptatum consequatur alias sed, officia aliquid earum! Eum voluptatum dolorem qui?</p>
+            </article>
+            <article id="a2">
+                <h2>Subhead 2</h2>
+                <p>Nemo reiciendis nisi doloribus error iste cumque dicta! Sit, fugiat autem aliquam dicta voluptatem adipisci suscipit. Quam, itaque. Architecto sit iure voluptatum, id vero soluta. Ipsam, consectetur in molestiae illum?</p>
+            </article>
+            <article id="a3">
+                <h2>Subhead 3</h2>
+                <p>Laboriosam quae minima porro optio reprehenderit. In eligendi blanditiis fuga maiores cumque, laborum rerum reiciendis quisquam ex. Excepturi autem animi, ea fugit sit aspernatur ut reprehenderit, laboriosam quaerat. Ipsa, cupiditate.</p>
+            </article>
+
+            <button>
+                Click me, YO!
+            </button>
+
+        </section>
+
+    </body>
+</html>
